@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystals Game</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+    <div class="jumbotron">
+        <h1 class="text-center">The Crystals Game!</h1>
+        <h3 class="text-center">Collect the right crystals to win the game!</h3>
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-7">
+                <div class="card">
+                    <h3 class="card-header">Your Choices!</h3>
+
+                    <div class="card-body">
+                        <button id="crystal1" class="btn btn-primary number" value="">
+                                <img src="assets/images/crystal1.jpg" />
+                        </button>
+                        <button id="crystal2" class="btn number" value="">
+                                <img src="assets/images/crystal2.jpg" />
+                        </button>
+                        <button id="crystal3" class="btn btn-danger number" value="">
+                                <img src="assets/images/crystal3.jpg" />
+                        </button>
+                        <button id="crystal4" class="btn btn-success number" value="">
+                                <img src="assets/images/crystal4.jpg" />
+                        </button>
+                        <br><br>
+                        <p id="wins">Total Wins: 0</p>
+                        <p id="losses">Total Losses: 0</p>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-lg-5">
+                <div class="card">
+                    <h3 class="card-header">Try Here:</h3>
+                    <div class="card-body">
+
+                        <p>Your guess: </p>
+                        <h1 id="guessed-number"></h1>
+                        <p>Your target: </p>
+                        <h1 id="target-number"></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        img{
+            width: 100px;
+            height: 100px;
+        }
+        body {
+            background-image: url("assets/images/gaming-pattern.png")
+        }
+        .jumbotran{
+            background-color: #4aaaa5;
+        }
+        #crystal2{
+            background-color: #611BBD;
+        }
+    </style>
+
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
